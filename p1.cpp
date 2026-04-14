@@ -20,7 +20,7 @@
 using namespace al;
 
 float r() { return rnd::uniform(); }
-float rs() { return rnd::uniformS(); }
+float rs() { return rnd::uniformS() * 4; }
 
 struct MyApp : public App {
   ParameterInt N{"/N", "", 10, 2, 100};
